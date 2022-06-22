@@ -1,6 +1,8 @@
 from my_package.my_module import add
+import pytest
 
-import numpy as np
+@pytest.mar.parametrize(
+  "x,y,result", [(1,2,3),(3,4,7),(5,6,11)]
 
-def test_add():
-  assert add(3,4) == 7
+def test_add(x,y,result):
+  assert add(x,y) == result
