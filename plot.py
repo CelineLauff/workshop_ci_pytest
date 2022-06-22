@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-from functions import add
+from my_package.my_module import add
 x = list(range(10))
 y = add(x, x)
 
