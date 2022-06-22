@@ -8,4 +8,4 @@ def test_add():
 def test_show_printing():
   matrix=np.random.rand(3,3)
   print(matrix)
-  assert False
+  assert np.allclose(matrix,matrix+1)
